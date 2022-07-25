@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="Quick_Shop.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/Drink - 95.mp4" type="video/mp4">
+        </video>
+
+
+
+        <div class="image_box">
+            <!--------------------------------------- select image ---------------------------------------->
+            <img src="products img/3.png" alt="">
+        </div>
+        <div class="detail_box">
+
+            <div class="bar">
+                <h2>Details</h2>
+            </div>
+            <!-------------------------------------- Product Name ---------------------------------------->
+            <h3>OptimH2O® Reverse Osmosis + Claryum®</h3>
+            <div class="detail">
+                <!----------------------------------- Details -------------------------------------------->
+                <p> Model
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    AQ-RO-3.55 </p>
+                <hr> 
+                <p> Brand
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Aquasana </p>
+                <hr>
+                <p> Purification Capacity(PerHour)
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    5-10 liters/Hour </p>
+                <hr>
+                <p><b> Price
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        25000 Rs </b></p>
+                <hr>
+
+                <div class="head3">
+                    <h3>Quaitity</h3>
+                    <div class="quaintity">
+
+                        <button onclick="decrement()">-</button>
+                        <h2 id="root"></h2>
+                        <button onclick="increment()">+</button>
+
+
+                    </div>
+                </div>
+
+<div class="add">
+<button class="cart">
+    <span>Add to Cart</span>
+    <i class="fa fa-cart-plus"></i>
+</button>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        var data = 0;
+        document.getElementById("root").innertext = data;
+
+        function decrement() {
+            data=data-1;
+            document.getElementById("root").innerText = data;
+        }
+        function increment(){
+            data=data+1;
+            document.getElementById("root").innerText=data;
+        }
+    </script>
+
+              
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

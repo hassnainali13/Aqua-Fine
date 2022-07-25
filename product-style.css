@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    width: 100%;
+    /* height: 100vh; */
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+    object-fit: cover;
+
+}
+
+h2 {
+    background: hwb(211 29% 6%);
+    color: #fff;
+    width: 150px;
+
+    padding: 5px;
+    height: 30px;
+    margin-left: 10%;
+    position: absolute;
+    top: 6%;
+    left: 2%;
+
+}
+
+h2::after {
+    content: '';
+    border-top: 40px solid hwb(211 29% 6%);
+    border-right: 40px solid transparent;
+    position: relative;
+    left: 43px;
+    top: 35px;
+}
+
+
+nav{
+    position: relative;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+    }
+    
+    nav .logo{
+    width: 100px;
+    position: relative;
+   right: 60px;
+    }
+    
+    nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px ;
+    
+    }
+    
+    nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 17px;
+    
+    }
+
+.container_row {
+
+    height: 280px;
+    width: 800px;
+    position: relative;
+    top: 20px;
+    left: 25%;
+    margin-top: 12px;
+}
+
+.columns {
+    border: 1px rgb(82, 151, 230) solid;
+    height: 200px;
+    width: 150px;
+    float: left;
+    margin-left: 5%;
+    position: relative;
+    top: 5px;
+    background-image: url(images/pure\ water\ backgroundjpg.jpg);
+    border-radius:7px;
+}
+
+.columns h4 {
+    position: absolute;
+    top: 208px;
+    color: aliceblue;
+}
+
+.columns h5 {
+    position: absolute;
+    top: 230px;
+    left: 60%;
+    color: rgb(245, 221, 221);
+}
+
+.columns img {
+    width: 150px;
+    height: 200px;
+
+}
+.checked {
+    color: orange;
+    position: relative;
+    top: 45px;
+  
+
+}
+.checked-o {
+    color: black;
+    position: relative;
+    top: 45px;
+  
+
+}
+.overlay {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 6%;
+    margin-left: 3px;
+}
+
+.columns:hover .overlay {
+
+
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+.overlay img {
+    width: 17px;
+    height: 14px;
+    margin-top: 5px;
+    border-radius: 50px;
+}
